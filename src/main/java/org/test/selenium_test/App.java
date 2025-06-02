@@ -17,7 +17,11 @@ import java.time.Duration;
 public class App {
   public static void main(String[] args) throws InterruptedException, IOException {
     System.out.println("Hello World!");
-    WebDriver driver = new ChromeDriver();
+	ChromeOptions options = new ChromeOptions();
+    options.addArguments("--headless");
+    
+    //Chromedriver definition
+    WebDriver driver = new ChromeDriver(options);
     //1.Open the URL
     driver.get("http://54.237.200.152:8080/addressbook-2.0/");
     
