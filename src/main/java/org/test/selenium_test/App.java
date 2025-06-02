@@ -9,6 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,6 +18,12 @@ import java.time.Duration;
 public class App {
   public static void main(String[] args) throws InterruptedException, IOException {
     System.out.println("Hello World!");
+    
+    //run in headless mode
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--headless");
+    
+    //Chromedriver definition
     WebDriver driver = new ChromeDriver();
     //1.Open the URL
     driver.get("http://54.83.65.229:8080/addressbook-2.0/");
@@ -83,7 +90,7 @@ public class App {
 	 File destFile=new File("test-report.jpg"); 
 	 FileUtils.copyFile(scrFile,destFile);
 	 
-    
+	 System.out.println("Script executed and result captured");
     driver.quit();
     
   }
