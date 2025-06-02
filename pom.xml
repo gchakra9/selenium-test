@@ -12,10 +12,9 @@
   <name>selenium-test</name>
   <url>http://www.example.com</url>
 
-  <properties>
-         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+ <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>23</maven.compiler.release>
     <selenium.version>4.33.0</selenium.version>
   </properties>
 
