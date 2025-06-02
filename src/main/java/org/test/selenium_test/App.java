@@ -19,7 +19,7 @@ public class App {
     System.out.println("Hello World!");
     WebDriver driver = new ChromeDriver();
     //1.Open the URL
-    driver.get("http://54.237.200.152:8080/addressbook-2.0/");
+    driver.get("http://54.83.65.229:8080/addressbook-2.0/");
     
     driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 
