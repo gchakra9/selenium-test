@@ -26,7 +26,7 @@ public class App {
     //Chromedriver definition
     WebDriver driver = new ChromeDriver(options);
     //1.Open the URL
-    driver.get("http://54.83.65.229:8080/addressbook-2.0/");
+    driver.get("http://44.220.160.113:8080/addressbook-2.0/");
     
     driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 
