@@ -39,14 +39,14 @@ public class App {
 
     //3.Locate first name and enter first namea
     
-    driver.findElement(By.id("gwt-uid-5")).sendKeys("Abcd");
+    driver.findElement(By.id("gwt-uid-5")).sendKeys("Gourav");
     
     
     //4.locate last name and enter last name
-    driver.findElement(By.id("gwt-uid-7")).sendKeys("efgh");
+    driver.findElement(By.id("gwt-uid-7")).sendKeys("Chakraborty");
     
     //5.locate phone number and enter phone number
-    driver.findElement(By.id("gwt-uid-9")).sendKeys("12345");
+    driver.findElement(By.id("gwt-uid-9")).sendKeys("9999999");
     
     //6.Locate email and enter email
     driver.findElement(By.id("gwt-uid-11")).sendKeys("abc@abc.com");
