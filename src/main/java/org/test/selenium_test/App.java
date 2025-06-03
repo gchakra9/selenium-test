@@ -20,13 +20,13 @@ public class App {
     System.out.println("Hello World!");
     
     //run in headless mode
-    ChromeOptions options = new ChromeOptions();
+   /* ChromeOptions options = new ChromeOptions();
     options.addArguments("--headless");
-    
-    //Chromedriver definition
     WebDriver driver = new ChromeDriver(options);
+    //Chromedriver definition*/
+    WebDriver driver = new ChromeDriver();
     //1.Open the URL
-    driver.get("http://44.220.160.113:8080/addressbook-2.0/");
+    driver.get("http://54.146.26.166:8080/addressbook-2.0/");
     
     driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 
